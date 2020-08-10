@@ -11,5 +11,32 @@ c)el promedio de personas por viaje,  que viajan en invierno
 */
 function mostrar()
 {
-	alert("tres");
+	let sexo;
+	let lugar;
+	let temporada;
+	let cantidad;
+	let AcumBari=0;
+	let AcumCata=0;
+	let AcumSal=0;
+
+	do{	
+		sexo = (prompt("Ingrese Sexo: F/M")).toUpperCase(sexo);
+    	lugar = parseInt(prompt("Ingrese lugar: 1)Bariloche , 2)Cataratas , 3)Salta")); 
+		tempoprada = parseInt(prompt("Ingrese temporada: 1)Otoño , 2)Invierno , 3)Verano , 4)Primavera"));
+		cantidad = parseInt(prompt("Ingrese cantidad de personas que viajan"));
+	
+		switch (lugar){
+		case 1:
+			AcumBari++
+
+		
+	
+	
+	}
+	
+	}
 }
+	
+	
+	//alert("tres");
+

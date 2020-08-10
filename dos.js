@@ -13,6 +13,10 @@ c)la marca del más barato de los sólidos
   let tipo;
   let acumPeso=0;
   let Respuesta;
+  let max;
+  let min;
+  let marcaCara;
+  let marcaBarata;
 
    do {
       marca = prompt("Ingrese marca");
@@ -23,16 +27,20 @@ c)la marca del más barato de los sólidos
       acumPeso= acumPeso + pesoKg;
 
       if (tipo=="LIQUIDO"){
-        max=tipo;
-        min=tipo;
-        if (peso < min) {
-          min = peso;	
+        max=precio;
+        if (precio > max){
+          max = precio;
         }
-        else if (peso > max){
-          max = num;
-        }	
+        marcaCara=marca;
       }
-  
+      if (tipo=="SOLIDO"){
+        min=precio;
+        if (precio < min){
+          min = precio;
+        }
+        marcaBarata=marca;
+      }	
+      
       Respuesta = (prompt("Desea ingresar otro Producto? SI/NO")).toUpperCase(Respuesta);
    
    switch (Respuesta){
@@ -47,9 +55,9 @@ c)la marca del más barato de los sólidos
   
   document.write("La cantidad total de Kilos de la compra es: " + acumPeso);
   document.writeln(`<br>`);
-  document.write("La marca del producto más caro de los líquidos es: " + );
+  document.write("La marca del producto más caro de los líquidos es: " + marcaCara);
   document.writeln(`<br>`);
-  document.write("La marca del producto más barato de los sólidos es: " + );
+  document.write("La marca del producto más barato de los sólidos es: " + marcaBarata);
   
   
   

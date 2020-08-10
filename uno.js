@@ -37,7 +37,7 @@ function mostrar()
 				min = peso;	
 			}
 			else if (peso > max){
-				max = num;
+				max = peso;
 			}	
 		}
 		acumEdad= acumEdad+edad;
